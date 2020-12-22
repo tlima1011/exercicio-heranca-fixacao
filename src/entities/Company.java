@@ -32,7 +32,7 @@ public class Company extends TaxPayer{
 	public String toString() { 
 		StringBuilder sb = new StringBuilder(); 
 		sb.append(super.toString());
-		sb.append(" $" +String.format("%.2f", this.tax()));
+		sb.append(": $" +String.format("%.2f", this.tax()));
 		return sb.toString(); 
 	}
 }

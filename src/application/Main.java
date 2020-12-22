@@ -3,7 +3,6 @@ package application;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
-
 import entities.Company;
 import entities.Individual;
 import entities.TaxPayer;
@@ -41,9 +40,12 @@ public class Main {
 		}
 		System.out.println();
 		System.out.println("TAXES PAID:"); 
-		Double sum = 0.0; 
+		 
 		for(TaxPayer p : list) {
 			System.out.println(p);
+		}
+		Double sum = 0.0;
+		for(TaxPayer p : list) {
 			sum += p.tax();
 		}
 		System.out.println();
