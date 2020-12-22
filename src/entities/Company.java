@@ -1,6 +1,6 @@
 package entities;
 
-public class Company extends Player{
+public class Company extends TaxPayer{
 	
 	//Atributos 
 	private Integer numberEmployees;

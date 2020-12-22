@@ -1,6 +1,6 @@
 package entities;
 
-public class Individual extends Player{
+public class Individual extends TaxPayer{
 	
 	//Atributos 
 	private Double healthExpenditures;

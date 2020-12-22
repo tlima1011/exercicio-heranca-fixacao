@@ -1,15 +1,15 @@
 package entities;
 
-public abstract class Player {
+public abstract class TaxPayer {
 	
 	//Atributos 
 	private String name; 
 	private Double anualIncome; 
 	//Construtor
-	public Player() {
+	public TaxPayer() {
 		
 	}
-	public Player(String name, Double anualIncome) {
+	public TaxPayer(String name, Double anualIncome) {
 		this.name = name;
 		this.anualIncome = anualIncome;
 	}

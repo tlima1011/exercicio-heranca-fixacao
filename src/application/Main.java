@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import entities.Company;
 import entities.Individual;
-import entities.Player;
+import entities.TaxPayer;
 
 public class Main {
 
@@ -14,7 +14,7 @@ public class Main {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in); 
-		ArrayList <Player> list = new ArrayList<>(); 
+		ArrayList <TaxPayer> list = new ArrayList<>(); 
 
 		System.out.print("Enter the number of tax payers: "); 
 		int n = sc.nextInt();
@@ -42,7 +42,7 @@ public class Main {
 		System.out.println();
 		System.out.println("TAXES PAID:"); 
 		Double sum = 0.0; 
-		for(Player p : list) {
+		for(TaxPayer p : list) {
 			System.out.println(p);
 			sum += p.tax();
 		}
