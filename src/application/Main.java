@@ -6,6 +6,7 @@ import java.util.Scanner;
 import entities.Company;
 import entities.Individual;
 import entities.TaxPayer;
+import util.Taxes;
 
 public class Main {
 
@@ -39,17 +40,9 @@ public class Main {
 				}
 		}
 		System.out.println();
-		System.out.println("TAXES PAID:"); 
-		 
-		for(TaxPayer p : list) {
-			System.out.println(p);
-		}
-		Double sum = 0.0;
-		for(TaxPayer p : list) {
-			sum += p.tax();
-		}
-		System.out.println();
-		System.out.print("TOTAL TAXES: $" +String.format("%.2f", sum));  //97000.00
+		Taxes.taxPayers(list);
+		Taxes.totalTaxes(list);
+		
 		sc.close();
 	}
 }
