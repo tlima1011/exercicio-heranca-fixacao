@@ -19,7 +19,7 @@ public class Individual extends TaxPayer{
 	public void setHealthExpenditures(Double healthExpenditures) {
 		this.healthExpenditures = healthExpenditures;
 	}
-	//Métodos 
+	//Método de cálculo de imposto de Individual 
 	@Override
 	public double tax() {
 		Double tax = (this.getAnualIncome() * 0.25) - (this.healthExpenditures * 0.5);

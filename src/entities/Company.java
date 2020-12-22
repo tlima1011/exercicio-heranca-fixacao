@@ -19,7 +19,7 @@ public class Company extends TaxPayer{
 	public void setNumberEmployees(Integer numberEmployees) {
 		this.numberEmployees = numberEmployees;
 	}
-	//Métodos 
+	//Métodos para calculo de imposto dentro de Company 
 	@Override
 	public double tax() {
 		Double tax = this.getAnualIncome() * 0.16;  
