@@ -26,7 +26,7 @@ public abstract class TaxPayer {
 	public void setAnualIncome(Double anualIncome) {
 		this.anualIncome = anualIncome;
 	}
-	//Métodos abstratos 
+	//Métodos abstratos especificando para outras classes com especificação e polimorfismo 
 	public abstract double tax(); 
 	
 	public String toString() {

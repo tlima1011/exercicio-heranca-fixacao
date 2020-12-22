@@ -12,6 +12,13 @@ public class Individual extends TaxPayer{
 		super(name, anualIncome);
 		this.healthExpenditures = healthExpenditures;
 	}
+	//Getters and Setters 
+	public Double getHealthExpenditures() {
+		return healthExpenditures;
+	}
+	public void setHealthExpenditures(Double healthExpenditures) {
+		this.healthExpenditures = healthExpenditures;
+	}
 	//Métodos 
 	@Override
 	public double tax() {
@@ -28,4 +35,5 @@ public class Individual extends TaxPayer{
 		sb.append(" $" +String.format("%.2f", this.tax()));
 		return sb.toString(); 
 	}
+	
 }
